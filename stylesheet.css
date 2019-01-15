@@ -3,7 +3,7 @@ body, html{
     margin:0;
     padding: 0;
     font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-family: 'Oswald', sans-serif !important;
     font-weight: 400;
     line-height: 1.8em;
     color: white;
@@ -19,37 +19,55 @@ body, html{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80);
     background-position: center;
+    display: flex;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .theWelcome{
     color: white;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
-    font-style: oblique;
+    text-align: center;
+    margin: auto;
 }
 
 .theWelcome h4{
-    font-size: 100px;
-}
-.brandName-left{
-    margin-top: 275px;
-    margin-left: 50px;
+    font-size: 160px;
+    text-shadow: 3px 3px #000;
+    font-family: 'Permanent Marker',cursive;
+
 }
 .brandName-left h5{
     font-size: 35px;
+    font-style: italic;
     text-transform: uppercase;
 }
 .brandName-right p{
+    font-style: italic;
     opacity: 0.8;
-    margin-top: 350px;
-    margin-right: 50px;
+    letter-spacing: 3px;
     text-shadow: 2px 2px #000;
     font-family: 'Roboto Mono', monospace;
     font-size: 36px;
+}
+.duoLogo{
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.dscLogo{
+    background-image: url(images/logo/DSC_badge_Color.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+.unsriLogo{
+    background-image: url(images/LOGO\ UNIVERSITAS\ SRIWIJAYA.png);
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
 }
 
 /*end of HEADER BACKGROUND*/
@@ -121,13 +139,13 @@ body, html{
     background: #000;
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 .remark-config1{
     display: grid;
     margin: auto;
     width: 80%;
     margin-bottom: 10px;
-    padding: 20px;
     color: #fff;
     transition: 0.5s;
     grid-template-columns: 1fr 1fr;
@@ -138,12 +156,9 @@ body, html{
     display: grid;
     margin: auto;
     width: 80%;
-    margin-bottom: 10px;
-    padding: 20px;
     color: #fff;
     transition: 0.5s;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
 
 }
 .remark-content{
@@ -296,17 +311,33 @@ footer p{
 }
 /* END OF FOOTER */
 /* Media Queries */
-@media(max-width:700px){
+@media(max-width:1000px){
+    .brandName-left h4{
+        font-size: 140px;
+    }
+    .brandName-left h5{
+        font-size: 30px;
+    }
+    .brandName-right{
+        margin-right: 0;
+    }
+    .brandName-right p{
+        font-size: 31px;
+    }
+}
+@media(max-width:769px){
     .remark-config1{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-
+        padding: 20px 0;
     }
     .remark-config2{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
     }
+    .remarkGrid{padding: 0;}
+    .remark-content{padding: 0;}
     .remarkImg1{margin: 0 auto;}
     .remarkPerson{
         text-align: left;
@@ -318,6 +349,12 @@ footer p{
     .dscIntro{
         grid-template-columns: 1fr;
     }
+}
+@media(max-width:700px){
+    .duoLogo{
+        display: none;
+    }
+
     .newsPanelGrid{
         grid-template-columns: 1fr;
         width: 100%;
@@ -329,4 +366,56 @@ footer p{
     .news3{
         grid-row: 3;
     }
+}
+
+@media(max-width:501px){
+    .brandName-left h4{
+        font-size: 100px;
+    }
+    .brandName-left h5{
+        font-size: 24px;
+    }
+    .brandName-right p{
+        font-size: 22px;
+    }
+    .remarkTitle{
+        font-size: 3em;
+    }
+    .remarkImg1{
+        width:250px;
+        height: 250px;
+    }
+    .img2{margin: 0 auto;}
+    .remarkText{
+        font-size: 19px;
+    }
+    .remarkPerson{
+        font-size: 17px;
+    }
+}
+@media(max-width:400px){
+    .brandName-left h4{
+        font-size: 90px;
+    }
+    .brandName-left h5{
+        font-size: 22px;
+    }
+    .brandName-right p{
+        font-size: 20px;
+    }
+    .remarkTitle{
+        font-size: 2.5em;
+    }
+    .newsPanelGrid{
+        grid-gap: 0;
+    }
+    .remarkText{font-size: 14px;}
+    .news1,.news2,.news3{
+        margin-bottom: 20px;
+    }
+    .remarkImg1{
+        width:220px;
+        height: 220px;
+    }
+
 }

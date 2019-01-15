@@ -1,0 +1,332 @@
+body, html{
+    height:100%;
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: white;
+    background-image: url('https://images.unsplash.com/photo-1434609300835-27998bcd175d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=031ab1d8ab5844563abf7bab66515859&auto=format&fit=crop&w=1934&q=80');
+
+} 
+
+/* FONTS */
+/*HEADER BACKGROUND*/
+
+.theLandingPage{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)),url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1057&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.theWelcome{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    font-style: oblique;
+}
+
+.theWelcome h4{
+    font-size: 100px;
+}
+.brandName-left{
+    margin-top: 275px;
+    margin-left: 50px;
+}
+.brandName-left h5{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.brandName-right p{
+    opacity: 0.8;
+    margin-top: 350px;
+    margin-right: 50px;
+    text-shadow: 2px 2px #000;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 36px;
+}
+
+/*end of HEADER BACKGROUND*/
+/*WHAT IS DSC?*/
+.dscIntro{
+    margin: auto;
+    display: grid;
+    background: rgb(245, 245, 245);
+
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+
+}
+.box-box1{
+    grid-template-columns: 1fr;
+    padding: 2em;
+    background-size: cover;
+    text-align:center;
+    text-transform: uppercase;
+}
+.box-box1 .thinkLogo{
+    margin: 70px auto 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url(images/multy-user.png);
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.box-box1 h4{
+    margin-top: 30px;
+    font-size: 35px;    
+}
+
+.box-box2{
+    padding: 2em;
+}
+
+/* REMARK SECTION */
+.remark{
+    display: block;
+    margin: auto;
+    background: rgba(31, 31, 31, 0.6);
+    padding-bottom: 20px;
+}
+.remark hr{
+    height: 1px;
+    background: #fff;
+    width: 80%;
+}
+.remarkTitle{
+    padding: 50px;
+    width: auto;
+    font-size: 4em;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.lined{
+    background: red;
+    height: 4px;
+    width: 200px;
+    margin: 0 auto;
+}
+.remarkGrid{
+    background: #000;
+    width: 80%;
+    margin: 0 auto;
+}
+.remark-config1{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.remark-config2{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: 0.5s;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+.remark-content{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.remarkImg1{
+    background: url(images/jennie.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 8px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    grid-column: span 1;
+    display: flex;
+}
+.img2{
+    background: url(images/jisoo.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 8px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 0 0;
+    border-radius: 50%;
+    grid-column: span 1;
+    display: flex;
+}
+.remarktext1{
+    grid-column: span 1;
+}
+.remarkText{
+    font-style: oblique;
+}
+
+.remarktext2{
+    margin-left: auto;
+    text-align: right;
+}
+/* END OF REMARK SECTION */
+/* NEWS PANEL */
+.newsPanel-config{
+    background: #000;
+}
+.newsPanelGrid{
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    width: 95%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.news1,.news3{
+    position: relative;
+    height: 225px;
+    background-position: center;
+    background-size: cover;
+}
+.news1{
+    background-image: url('images/japan.jpg');
+
+}
+.news2{
+    position: relative;
+    height: 475px;
+    background-image: url(images/singapore.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.news3{
+    background-image: url(images/southkorea.jpg);
+}
+.newsName-left,.newsName-right{
+    padding: 13px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    transition: 0.8s;
+}
+.newsName-left:hover{
+    height: 80px;
+    transition-duration: 0.5s; 
+}
+.newsName-right:hover{
+    height: 75px;
+}
+.btn{
+    grid-column: span 2;
+    margin: auto;
+    z-index: 1;
+}
+.showMore-btn{
+    position: relative;
+    display: block;
+    color: white;
+    font-family: 'Staatliches',cursive;
+    font-size: 20px;
+    border: 2px solid  #ff7675;
+    padding: 7px;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+.showMore-btn::before{
+    background: #ff7675;
+    content: '';
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    transition: 0.8s all ease;
+}
+.showMore-btn::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+
+}
+.showMore-btn:hover{
+    color: white;
+    text-decoration: none;
+
+}
+.showMore-btn:hover::before{
+    height: 200%;
+}
+
+/* END OF NEWS PANEL */
+/* FOOTER */
+footer {
+    letter-spacing: 4px;
+    font-size: 0.9em;
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}  
+footer p{
+    margin-top: 10px;
+}
+/* END OF FOOTER */
+/* Media Queries */
+@media(max-width:700px){
+    .remark-config1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .remark-config2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .remarkImg1{margin: 0 auto;}
+    .remarkPerson{
+        text-align: left;
+    }
+    .remarktext2{
+        grid-row: 2;
+        text-align: left;
+    }
+    .dscIntro{
+        grid-template-columns: 1fr;
+    }
+    .newsPanelGrid{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .news2{
+        grid-row: 2;
+        height: 225px;
+    }
+    .news3{
+        grid-row: 3;
+    }
+}

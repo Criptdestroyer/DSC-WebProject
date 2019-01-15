@@ -3,7 +3,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  /*height: 100px;*/
   padding: 10px 100px;
   box-sizing: border-box;
   transition: 0.8s;
@@ -19,7 +19,7 @@ nav:hover {
 }
 nav.black{
     background: rgba(0,0,0,0.8);
-    height: 75px;
+    /*height: 75px;*/
     padding : 10px 50px;
 }
 .navbar-brand {
@@ -61,7 +61,7 @@ nav.black{
 }
 @media(max-width:1000px){
     ul.navbar-nav li a.nav-link {
-        display: none;
+        display: block;
     }
 
     ul.navbar-nav li.dropdownLink {

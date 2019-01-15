@@ -1,113 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style>
-        .remark{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .card-deck .card{
-            /*flex-grow: 0;*/
-            /*flex-shrink: 0;*/
-            flex-basis: 200px;
-        }
-
-    </style>
-
-    <title>Developer Student Club</title>
-</head>
-<body>
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">DSC ICON HERE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">Showcase</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<header class="container-fluid bg-light remark" style="height: 50vh;">
-    <div class="card" style="height: 50%; width: 50%;">
-        <div class="card-body"><h1 class="card-text text-center">DSC UNSRI</h1></div>
-    </div>
-</header>
-
-<section class="container">
-    <div class="row">
-        <div class="col-2">
-            <img class="img-fluid" src="https://i1.wp.com/www.mvhsoracle.com/wp-content/uploads/2018/08/default-avatar.jpg?ssl=1" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- --------------------css------------------- -->
+    <link rel="stylesheet" href="navbar-styling.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- OTHERS -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <title>DSC UNSRI</title>
+  </head>
+  <body>
+    <header class="main-header">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar">
+            <a class="navbar-brand" href="">
+            <img src="images/logo.png" style="height: 30px;width: auto" />
+          </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ShowCase</a>
+                  </li>
+  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="dropdownLink">
+                    <a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="col-10">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Lorem Ipsum</h3>
-                    <blackquote class="blackqoute card-text text-right">
-                        <p class=" lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate delectus dolore exercitationem ipsam modi optio provident quod ratione, voluptate. Ad dolores labore nostrum ratione reprehenderit sed tempore! Harum, nesciunt?</p>
-                        <footer class="blackquote-footer">Lorem Ipsum</footer>
-                    </blackquote>
+    </header>
+    <!-- end of navbar -->
 
-                </div>
+    <section class="theLandingPage">
+      <div class="theWelcome">
+        <div class="brandName-left">
+        <h4><strong>DSC</strong></h4>
+        <h5>Developer Student Club</h5>
+        </div>
+        <div class="brandName-right">
+        <p>CHAPTER : SRIWIJAYA UNIVERSITY</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1 INTRODUCTION -->
+    <div class="config">
+      <div class="dscIntro">
+        <div class="box-box1">
+          <div class="thinkLogo"></div>
+          <h4><strong>What is DSC?</strong></h4>
+        </div>
+        <div class="box-box2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            deserunt nostrum sequi culpa blanditiis, nesciunt, velit esse eum
+            hic alias vel qui ipsum cupiditate perferendis dolorum voluptatibus
+            vero tenetur est. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            eveniet, eius corporis debitis ipsum deleniti. Autem, vero nisi
+            repellat expedita aperiam eos laboriosam tempora distinctio. Quam,
+            officiis! Adipisci, consequuntur aliquam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. <br>Facere, asperiores fugit! Pariatur
+            assumenda aut doloribus odio, quia expedita cumque iste corrupti
+            harum culpa exercitationem nemo iure similique. Rerum, dolor
+            molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Facere vitae, expedita quasi sint voluptates dolor ipsa voluptatem,
+            dignissimos beatae tempore tenetur dicta saepe magni odio
+            praesentium natus possimus laudantium commodi. Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit.<br>Facere, asperiores fugit! Pariatur
+            assumenda aut doloribus odio, quia expedita cumque iste corrupti
+            harum culpa exercitationem nemo iure similique. Rerum, dolor
+            molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Facere vitae, expedita quasi sint voluptates dolor ipsa voluptatem,
+            dignissimos beatae tempore tenetur dicta saepe magni odio
+            praesentium natus possimus laudantium commodi. Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION DSC LEAD REMARK -->
+    <div class="remark">
+      <div class="remarkTitle">
+        <div class="lined"></div>
+        <span class="remarkTitleText">WHAT THEY SAY?</span>
+        <div class="lined"></div>
+      </div>
+      <div class="remarkGrid">
+      <div class="remark-config1">
+        <div class="remark-content remarkImg1"></div>
+        <div class="remark-content remarktext1">
+          <div>
+          <h5 class="remarkText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima illo atque quibusdam neque id commodi molestias minus. Maxime repellat perferendis optio, tempore magnam deleniti rem ducimus aliquid, esse corporis commodi!</h5>
+          <h5 class="remarkPerson">- Blabla</h5>
+          <h5 class="remarkPerson">DSC Lead</h5>
+          </div>
+        </div>
+      </div>
+      <div class="remark-config2">
+        <div class="remark-content remarktext2">
+          <div>
+          <h5 class="remarkText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima illo atque quibusdam neque id commodi molestias minus. Maxime repellat perferendis optio, tempore magnam deleniti rem ducimus aliquid, esse corporis commodi!</h5>
+          <h5 class="remarkPerson">- Blabla</h5>
+          <h5 class="remarkPerson">DSC Lead</h5>
+          </div>
+        </div>
+        <div class="remark-content remarkImg1 img2"></div>
+      </div>
+      </div>
+    </div>
+    <!-- NEWS PANEL -->
+    <div class="newsPanel-config">
+        <div class="newsPanelGrid">
+            <a class="news1" href="#">
+              <div class="newsName-left">Lorem Ipsum</div>
+            </a>
+            <a class="news2" href="#">
+              <div class="newsName-right">Lorem Ipsum</div>
+            </a>
+  
+            <a class="news3" href="#">
+              <div class="newsName-left">Lorem Ipsum</div>
+            </a>
+            <div class="btn">
+              <a class="showMore-btn" href="#">Show More</a>
             </div>
         </div>
+      </div>
+  
+      <!-- FOOTER -->
+
+    <div class="wrapper">
+      <footer id="main-footer">
+        <p>Made by our love and dedication</p>
+      </footer>
     </div>
-</section>
-
-<section class="container-fluid">
-    <div class="d-flex justify-content-between">
-        <div class="card" style="width: 300px;">
-            <img src="https://i1.wp.com/www.mvhsoracle.com/wp-content/uploads/2018/08/default-avatar.jpg?ssl=1" alt="" class="img-fluid">
-            <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus enim expedita magni non saepe, vel! Aperiam distinctio dolorem hic laborum minima officia omnis. Cum eligendi laudantium pariatur praesentium quibusdam repudiandae!</p>
-            </div>
-        </div>
-        <div class="card" style="width: 300px;">
-            <img src="https://i1.wp.com/www.mvhsoracle.com/wp-content/uploads/2018/08/default-avatar.jpg?ssl=1" alt="" class="img-fluid">
-            <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus enim expedita magni non saepe, vel! Aperiam distinctio dolorem hic laborum minima officia omnis. Cum eligendi laudantium pariatur praesentium quibusdam repudiandae!</p>
-            </div>
-        </div>
-        <div class="card" style="width: 300px;">
-            <img src="https://i1.wp.com/www.mvhsoracle.com/wp-content/uploads/2018/08/default-avatar.jpg?ssl=1" alt="" class="img-fluid">
-            <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
-                <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus enim expedita magni non saepe, vel! Aperiam distinctio dolorem hic laborum minima officia omnis. Cum eligendi laudantium pariatur praesentium quibusdam repudiandae!</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</body>
+    <!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="style-developer.js"></script>
+    <script src="navbar-styling.js"></script>
+    <!-- END OF BODY -->
+  </body>
 </html>

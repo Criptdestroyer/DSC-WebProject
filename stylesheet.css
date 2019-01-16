@@ -92,8 +92,7 @@ body, html{
     margin: 70px auto 0 auto;
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-    background-image: url(images/multy-user.png);
+    background-image: url(images/think.png);
     background-position: center;
     background-size: cover; 
 }
@@ -220,6 +219,8 @@ body, html{
 .news1,.news3{
     position: relative;
     height: 225px;
+    border-radius: 7px;
+    border: solid 8px rgba(0,0,0,0.2);
     background-position: center;
     background-size: cover;
 }
@@ -231,6 +232,8 @@ body, html{
     position: relative;
     height: 475px;
     background-image: url(images/singapore.jpg);
+    border-radius: 7px;
+    border: solid 8px rgba(0,0,0,0.2);
     background-position: center;
     background-size: cover;
     grid-column: span 1;
@@ -248,13 +251,7 @@ body, html{
     color: white;
     transition: 0.8s;
 }
-.newsName-left:hover{
-    height: 80px;
-    transition-duration: 0.5s; 
-}
-.newsName-right:hover{
-    height: 75px;
-}
+
 .btn{
     grid-column: span 2;
     margin: auto;
